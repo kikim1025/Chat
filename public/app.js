@@ -1,4 +1,4 @@
-$(document).ready(function () {
+-$(document).ready(function () {
 
     // Create/login function
     const login = function() {
@@ -45,9 +45,11 @@ $(document).ready(function () {
         const messageArea = $("#message-display");
         messageArea.empty();///might not be necessary
         $.get("/api/message", function(res) {
+            /*
             if (res.length === 0) {
-                throw "No messages exist yet";
+                //throw "No messages exist yet";
             } else {
+                */
                 const messages = $("<div>");
                 res.forEach(function(e) {
                     console.log(e)
@@ -56,7 +58,7 @@ $(document).ready(function () {
                 messageArea.append(messages);
                 $("#userpage").removeClass("d-none");
                 $("#loginpage").addClass("d-none");
-            }
+            
         });
     }
     
@@ -68,7 +70,7 @@ $(document).ready(function () {
             try { 
                 retrieveMessages();
             } catch(err) { // JWT is expired, so need login
-                console.log(err);
+                console.log(err);//no messagies exist yet
                 $("#userpage").addClass("d-none");
                 $("#messageArea").empty();
                 $("#loginpage").removeClass("d-none")
