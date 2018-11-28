@@ -1,0 +1,33 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Chat message app using MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikim1025/Chat.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Mongoose",
+    "Node.js",
+    "Express",
+    "JQuery",
+    "Javascript",
+    "backend",
+    "fullstack"
+  ],
+  "author": "Ki Beom Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kikim1025/Chat/issues"
+  },
+  "homepage": "https://github.com/kikim1025/Chat#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.13"
+  }
+}

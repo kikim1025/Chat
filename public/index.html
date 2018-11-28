@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>//////////////////////</title>
+</head>
+<body>
+    <main>
+        <div class="container-fluid text-center">
+            <nav class="navbar bg-light">
+                <p class="navbar-brand">Sticky</p>
+            </nav>
+
+            <div class="row" id="loginpage">
+                <div class="col">
+                    To login, put your username and password.
+                    <br/>
+                    To register, just put your desired username and password, and a new login will be created!
+                    <div class="jumbotron" id="login-area">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                            <label for="password">Password</label>
+                            <input type="text" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="login">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-none" id="userpage">
+                <div class="col-3 jumbotron" id="sidebar">
+                    sidebar
+                    <br/>
+                    <br/>
+                    <button type="button" class="btn btn-primary"id="send-message">temp</button>
+                </div>
+
+                <div class="col-7 jumbotron border border-dark" id="display">
+                    display
+                    <br/>
+                    <div id="message-display"></div>
+                    <div class="jumbotron" id="message-area">
+                        <div class="form-group">
+                            <label for="message-title">Message Title</label>
+                            <input type="text" class="form-control" id="message-title" placeholder="Title">
+                            <label for="message-body">Message Body</label>
+                            <input type="text" class="form-control" id="message-body" placeholder="Message">
+                            <label for="receiver">Receiver</label>
+                            <input type="text" class="form-control" id="receiver" placeholder="Receiver Id">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="send-message">Submit</button>
+                    </div>
+                </div>
+
+                <div class="col-2 jumbotron" id="users">
+                    users
+                    <br/>
+                    <div id="user-display"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/index.js"></script> 
+</body>
+</html>
