@@ -26,6 +26,7 @@
         }
         $.post("/api/message", message, function(res) {
             //if the response is error, explain why
+            render();
         });
     }
 
