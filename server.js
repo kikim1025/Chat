@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-var database = "mongodb://user:pass1kweh>@ds031098.mlab.com:31098/heroku_rvfz435q";
+var database = "mongodb://user:pass1kweh@ds031098.mlab.com:31098/heroku_rvfz435q";
 if (process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 } else {
